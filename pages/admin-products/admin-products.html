@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Productos</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="/css/admin-products.css">
+</head>
+
+<body>
+    <!-- ============ MAIN HEADER============ -->
+    <header class="main-header">
+        <input type="checkbox" class="burger-check" id="burger-check">
+
+        <label class="burger" for="burger-check">
+            <span class="burger-line">
+
+            </span>
+        </label>
+        <div class="header-left">
+            <a href="">
+                <img class="header-logo" src="/assets/images/logo2.png" alt="logo-djsoluciones">
+            </a>
+            <!-- =============  MAIN NAV  ==============  -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav">
+                            Principal
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/products/products.html" class="nav">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/admin-products/admin-products.html" class="nav">
+                            Admin. Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/register/register.html" class="nav">
+                            Registro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact/contact.html" class="nav">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about-us/about-us.html" class="nav">
+                            Quienes Somos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- =============  MAIN NAV  ==============  -->
+
+        <div class="header-right">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img class="user-profile" src="/assets/images/user-profile.png" loading="lazy" alt="userprofile">
+        </div>
+
+    </header>
+        <!-- ============ MAIN CONTAINER============ -->   
+    <main class="main-container">
+
+        <section class="title">
+            <h1>administrador de productos</h1>
+        </section>
+
+        <div class="container">
+            <div class="header-container">
+                <button class="add-btn">Añadir Producto</button>
+            </div>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre del Producto</th>
+                        <th>Descripción</th>
+                        <th>fecha</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/assets/images/products/diyuntor.jpg" alt="Ficha Macho 10A" width="100"></td>
+                        <td>Diyuntor Bipolar 40A</td>
+                        <td>Difirencial bipolar 40A.</td>
+                        <td>29/01/2024</td>
+                        <td>$17629.65</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/termica_bipolar.jpg" alt="Termica Bipolar 25A"
+                                width="100"></td>
+                        <td>Termica Bipolar 25A</td>
+                        <td>Interruptor térmico bipolar de 25A.</td>
+                        <td>29/01/2024</td>
+                        <td>$4023</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/ficham.jpg" alt="Diyuntor Bipolar 40A" width="100">
+                        </td>
+                        <td>Ficha Macho 10A</td>
+                        <td>Conector eléctrico macho 10A.</td>
+                        <td>29/01/2024</td>
+                        <td>$773.50</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/cable.jpg" alt="Cable Unipolar 1x1.5" width="100">
+                        </td>
+                        <td>Cable Unipolar 1x1.5</td>
+                        <td>Cable eléctrico unipolar de 1x1.5 mm².</td>
+                        <td>29/01/2024</td>
+                        <td>$25203</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/cajas.png" alt="Caja 4 Bocas IP65" width="100"></td>
+                        <td>Caja 4 Bocas IP65</td>
+                        <td>Caja de distribución de 4 bocas con grado de protección IP65.</td>
+                        <td>29/01/2024</td>
+                        <td>$6451</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/plafon.png" alt="Plafon Embutir Red. 18w" width="100">
+                        </td>
+                        <td>Plafon Embutir Red. 18w</td>
+                        <td>Plafón embutido LED redondo de 18w.</td>
+                        <td>29/01/2024</td>
+                        <td>$3840</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/jeluz-llave-de-luz-armada-punto-y-toma.jpg"
+                                alt="Armada Punto y toma JELUZ" width="100"></td>
+                        <td>Armada Punto y toma JELUZ</td>
+                        <td>Llave de luz y toma de corriente JELUZ.</td>
+                        <td>29/01/2024</td>
+                        <td>$2199</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/assets/images/products/mac.jpg" alt="Lampara 15w L/D" width="100"></td>
+                        <td>Lampara 15w L/D</td>
+                        <td>Lámpara LED 15w de luz de día.</td>
+                        <td>29/01/2024</td>
+                        <td>$944.30</td>
+                        <td>
+                            <a href="#" class="edit-btn"><i class="fa-solid fa-pen"></i> Editar</a>
+                            <a href="#confirm" class="delete-btn"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="confirm" class="modal">
+            <div class="modal-content">
+                <p>¿Está seguro que desea eliminar este producto?</p>
+                <div class="modal-buttons">
+                    <a href="#" class="btn btn-no">Cancelar</a>
+                    <a href="admin-products.html" class="btn btn-yes">Sí, eliminar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- ============ MAIN CONTAINER============ -->
+
+    <!-- ============ MAIN FOOTER============ -->
+    <footer class="main-footer">
+        <section>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i> Facebook </a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i> Instagram </a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i> Linkedin </a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-youtube"></i> Youtube</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3><strong>DjSoluciones</strong></h3>
+            <div class="logo-footer">
+                <img src="/assets/images/logo2.png" loading="lazy" alt="">
+            </div>
+            <p>2025 - Copyright © DjSoluciones.</p>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+            <ul>
+                <li> <a href="/pages/about-us/about-us.html">Sobre Nosotros</a></li>
+                <li><i class="fa-solid fa-phone"></i> Telefono: 011 4262-XXXX</li>
+                <li><i class="fa-solid fa-envelope-open-text"></i> Email: correo@gmail.com</li>
+                <li><i class="fa-solid fa-location-pin"></i> Direccion: Calle falsa 12345</li>
+            </ul>
+        </section>
+
+    </footer>
+    <!-- ============ MAIN FOOTER============ -->
+</body>
+
+</html>

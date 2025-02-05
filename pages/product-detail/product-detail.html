@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/product-detail.css">
+
+</head>
+
+<body>
+    <!-- ============ MAIN HEADER============ -->
+    <header class="main-header">
+        
+        <input type="checkbox" class="burger-check" id="burger-check">
+
+        <label class="burger" for="burger-check">
+            <span class="burger-line">
+
+            </span>
+        </label>
+        <div class="header-left">
+            <a href="">
+                <img class="header-logo" src="/assets/images/logo2.png" alt="logo-djsoluciones">
+            </a>
+            <!-- =============  MAIN NAV  ==============  -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav">
+                            Principal
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/products/products.html" class="nav">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/admin-products/admin-products.html" class="nav">
+                            Admin. Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact/contact.html" class="nav">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/register/register.html" class="nav">
+                            Registro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact/contact.html" class="nav">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about-us/about-us.html" class="nav">
+                            Quienes Somos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- =============  MAIN NAV  ==============  -->
+
+        <div class="header-right">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img class="user-profile" src="/assets/images/user-profile.png" loading="lazy" alt="userprofile">
+        </div>
+    </header>
+    <!-- ============ MAIN HEADER============ -->
+
+        <main class="container">
+            <section class="product-detail">
+                <div class="product-detail-container">
+                    <!-- Imagen del Producto -->
+                    <div class="product-image">
+                        <img src="/assets/images/products/diyuntor.jpg" alt="Diyuntor Bipolar 40A" loading="lazy">
+                    </div>
+
+                    <!-- Información del Producto -->
+                    <div class="product-info">
+                        <h1>Diyuntor Bipolar 40A</h1>
+                        <p class="price">$17629.65</p>
+                        <p class="date">Fecha de ingreso: 03/01/2023</p>
+
+                        <p class="description">
+                            Disyuntor bipolar de 40A para protección en instalaciones eléctricas. Ideal para proteger circuitos de sobrecarga o cortocircuitos.
+                        </p>
+
+                        
+                        <form action="#" method="POST" class="quantity-form">
+                            <label for="quantity">Cantidad:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                            <button type="button" class="add-to-cart-btn">Añadir al carrito</button>
+                        </form>
+
+                        <!-- Botones de acción -->
+                        <div class="product-actions">
+                            <button title="Comprar ahora" class="buy-now-btn">Comprar ahora</button>
+                            <button title="Añadir a favoritos" class="favorite-btn">
+                                <i class="fa-solid fa-heart"></i> Añadir a favoritos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="additional-info">
+                <h2>Características</h2>
+                <ul>
+                    <li>Disyuntor bipolar de 40A</li>
+                    <li>Protección contra sobrecarga y cortocircuitos</li>
+                    <li>Material resistente y duradero</li>
+                    <li>Aplicable en sistemas de baja tensión</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- ============ MAIN FOOTER============ -->
+    <footer class="main-footer">
+        <section>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i> Facebook </a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i> Instagram </a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i> Linkedin </a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-youtube"></i> Youtube</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3><strong>DjSoluciones</strong></h3>
+            <div class="logo-footer">
+                <img src="/assets/images/logo2.png" loading="lazy" alt="">
+            </div>
+            <p>2025 - Copyright © DjSoluciones.</p>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+            <ul>
+                <li> <a href="/pages/about-us/about-us.html">Sobre Nosotros</a></li>
+                <li><i class="fa-solid fa-phone"></i> Telefono: 011 4262-XXXX</li>
+                <li><i class="fa-solid fa-envelope-open-text"></i> Email: correo@gmail.com</li>
+                <li><i class="fa-solid fa-location-pin"></i> Direccion: Calle falsa 12345</li>
+            </ul>
+        </section>
+
+    </footer>
+    <!-- ============ MAIN FOOTER============ -->
+
+</body>
+</html>

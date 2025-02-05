@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <!-- ============ MAIN HEADER============ -->
+    <header class="main-header">
+        <input type="checkbox" class="burger-check" id="burger-check">
+
+        <label class="burger" for="burger-check">
+            <span class="burger-line">
+
+            </span>
+        </label>
+        <div class="header-left">
+            <a href="">
+                <img class="header-logo" src="/assets/images/logo2.png" alt="logo-djsoluciones">
+            </a>
+            <!-- =============  MAIN NAV  ==============  -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav">
+                            Principal
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/products/products.html" class="nav">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/admin-products/admin-products.html" class="nav">
+                            Admin. Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/register/register.html" class="nav">
+                            Registro
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact/contact.html" class="nav">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about-us/about-us.html" class="nav">
+                            Quienes Somos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- =============  MAIN NAV  ==============  -->
+
+        <div class="header-right">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <img class="user-profile" src="/assets/images/user-profile.png" loading="lazy" alt="userprofile">
+        </div>
+    </header>
+    <!-- ============ MAIN HEADER============ -->
+
+    <!-- ============ MAIN CONTAINER============ -->
+
+    <main class="main-container">
+        <h1>Registro</h1>
+        <form class="formulario">
+            <div class="input-group">
+                <label for="nomb">Nombre Completo</label>
+                <input type="text" name="nombre" id="nomb" required minlength="2" maxlength="54"
+                    placeholder="Escribe tu Nombre Completo" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+
+            </div>
+            <div class="input-group">
+                <label for="correo">Correo Electronico</label>
+                <input type="email" name="correo" id="correo" required maxlength="54" placeholder="Example@gmail.com"
+                    pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
+            </div>
+            <div class="input-group ">
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" name="pass" id="Contraseña" required minlength="8" maxlength="16"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Ej: Micontraseña123#" title="La contraseña debe tener al menos 1 letra mayúscula, 1 minúscula, 1 número y 1 carácter especial.">
+                    <input type="checkbox" id="show-passwor" class="show-password-checkbox">
+                    <label class="eye-icon" for="show-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </label>
+                    
+                    
+            </div>
+            <div class="input-group ">
+                <label for="repite-contraseña">Repetir Contraseña</label>
+                <input type="password" name="pass_repeat" id="repite-contraseña" required minlength="8" maxlength="16"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Repite tu Contraseña">
+                    <input type="checkbox" id="show-password" class="show-password-checkbox">
+                    <label class="eye-icon" for="show-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </label>
+                    
+                    
+            </div>
+            <div class="input-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha-nacimiento" required>
+            </div>
+
+            <div class="input-group">
+                <label for="provincia">Seleccione provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="">Seleccione una provincia</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre_rios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la_pampa">La Pampa</option>
+                    <option value="la_rioja">La Rioja</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquen">Neuquén</option>
+                    <option value="rio_negro">Río Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="san_juan">San Juan</option>
+                    <option value="san_luis">San Luis</option>
+                    <option value="santa_cruz">Santa Cruz</option>
+                    <option value="santa_fe">Santa Fe</option>
+                    <option value="santiago_del_estero">Santiago del Estero</option>
+                    <option value="tierra_del_fuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucumán</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="comentario">Observaciones</label>
+                <textarea name="comment" id="comentario" cols="30" rows="6" minlength="20" maxlength="300">
+
+        </textarea>
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+
+    <!-- ============ MAIN CONTAINER============ -->
+
+    <!-- ============ MAIN FOOTER============ -->
+    <footer class="main-footer">
+        <section>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook"></i> Facebook </a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i> Instagram </a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i> Linkedin </a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-youtube"></i> Youtube</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3><strong>DjSoluciones</strong></h3>
+            <div class="logo-footer">
+                <img src="/assets/images/logo2.png" loading="lazy" alt="">
+            </div>
+            <p>2025 - Copyright © DjSoluciones.</p>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+            <ul>
+                <li> <a href="/pages/about-us/about-us.html">Sobre Nosotros</a></li>
+                <li><i class="fa-solid fa-phone"></i> Telefono: 011 4262-XXXX</li>
+                <li><i class="fa-solid fa-envelope-open-text"></i> Email: correo@gmail.com</li>
+                <li><i class="fa-solid fa-location-pin"></i> Direccion: Calle falsa 12345</li>
+            </ul>
+        </section>
+
+    </footer>
+    <!-- ============ MAIN FOOTER============ -->
+
+</body>
+
+</html>
