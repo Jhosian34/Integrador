@@ -77,15 +77,18 @@ li:hover {
     flex-direction: column;
     list-style: none;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 20px;
     padding-left: 16px;
     gap: 10px;
     text-transform: uppercase;
+
 }
 
 .nav-list .nav-item {
     display: flex;
     align-items: center;
+    
 }
 
 .nav-list .nav {
@@ -94,6 +97,17 @@ li:hover {
     transition: all 0.5s ease;
     font-weight: 500;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.icon{
+    display: none;
+    
+}
+
+.nav-list .nav i{
+    margin-right: 10px;
+    
 }
 
 .header-right {
@@ -220,7 +234,7 @@ h2 {
     display: flex;
     min-height: 320px;
     flex-direction: column;
-
+    gap: 16px;
 }
 
 .info-container {
@@ -234,6 +248,7 @@ h2 {
     color: var(--color-cuarto);
     box-shadow: 0 4px 8px var(--color-quinto);
     border-radius: 20px;
+    
 
     p {
         text-align: left;
@@ -454,7 +469,7 @@ i:hover {
 
 .whatsapp-container{
     position: fixed;
-    left: 20px;
+    right:  20px;
     bottom: 40px;
     z-index: 1;
 }
@@ -527,8 +542,9 @@ li:hover {
             .nav-list {
                 flex-direction: row;
             }
-            
+
         }
+        
 
         .header-right {
             img {
@@ -550,6 +566,22 @@ li:hover {
     }
 }
 
+@media (max-width: 768px) {
+    
+    li:hover {
+        background-color: transparent !important; 
+    }
+    .nav-list .nav{
+        border: 2px solid var(--color-cuarto);
+        border-radius: 10px;
+        
+    }
+    .icon {
+        display: inline-block;  
+        font-size: 20px; 
+        
+    }
+}
 
 @media (max-width: 768px) {
     .brand-card {
