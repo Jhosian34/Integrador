@@ -79,7 +79,7 @@ li:hover {
     flex-direction: column;
     list-style: none;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 16px;
     gap: 10px;
     text-transform: uppercase;
@@ -96,6 +96,16 @@ li:hover {
     transition: all 0.5s ease;
     font-weight: 500;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.icon{
+    display: none;
+    
+}
+
+.nav-list .nav i{
+    margin-right: 10px;
+    
 }
 
 .header-right {
@@ -450,5 +460,24 @@ i:hover {
 
     .quantity-form {
         justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    
+    li:hover {
+        background-color: transparent !important; 
+    }
+    .nav-list .nav{
+        border: 2px solid var(--color-cuarto);
+        border-radius: 10px;
+        
+    }
+    .nav-list{
+        margin-top: 20px;
+    }
+    .icon {
+        display: inline-block;  
+        font-size: 20px; 
+        
     }
 }
