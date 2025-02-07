@@ -398,10 +398,8 @@ i:hover {
     li:hover {
         background-color: transparent !important; 
     }
-    .nav-list .nav{
-        border: 2px solid var(--color-cuarto);
-        border-radius: 10px;
-        
+    .nav-item{
+        border-bottom: 2px solid var(--color-cuarto);
     }
     .nav-list{
         margin-top: 20px;
@@ -410,5 +408,9 @@ i:hover {
         display: inline-block;  
         font-size: 20px; 
         
+    }
+
+    .main-footer{
+        font-size: 1rem;
     }
 }

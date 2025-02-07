@@ -428,7 +428,8 @@ li:hover{
 @media (max-width: 768px) {
 
     .main-container{
-        padding: 0 15px
+        padding: 0 15px;
+        margin: 0;
     }
     
     h1 {
@@ -437,11 +438,13 @@ li:hover{
     }
 
     .product-table th, .product-table td {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        
     }
 
     .product-table img {
         width: 80px; 
+        
     }
 
     .header-container {
@@ -468,10 +471,8 @@ li:hover{
     li:hover {
         background-color: transparent !important; 
     }
-    .nav-list .nav{
-        border: 2px solid var(--color-cuarto);
-        border-radius: 10px;
-        
+    .nav-item{
+        border-bottom: 2px solid var(--color-cuarto);
     }
     .nav-list{
         margin-top: 20px;
@@ -480,5 +481,8 @@ li:hover{
         display: inline-block;  
         font-size: 20px; 
         
+    }
+    .main-footer{
+        font-size: 1rem;
     }
 }

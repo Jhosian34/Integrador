@@ -87,7 +87,16 @@
     .etiqueta-flotando{
         h2{
             font-size: 2.5rem;
-        }
         
+    }
+}
+}
+@media screen and (max-width: 768px) {
+    .image-slider {
+        height: 50vh; 
+    }
+
+    .image-slider img {
+        height: 50vh;
     }
 }
